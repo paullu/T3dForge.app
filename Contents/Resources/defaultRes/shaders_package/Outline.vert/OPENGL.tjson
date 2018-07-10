@@ -3,7 +3,7 @@
 			"Index":	0,
 			"ShaderPackage":	{
 				"Name":	"",
-				"Path":	"defaultRes/shaders_package/Outline.vert/OPENGL.tjson",
+				"Path":	"defaultRes/shaders_package//Outline.vert/OPENGL.tjson",
 				"ShaderDescriptors":	[{
 						"first":	{
 							"GlobalShaderMacroMask":	0,
@@ -41,44 +41,52 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	80,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	64,
 										"SourceBufferIndex":	1,
-										"SourceOffset":	128
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	16,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	128,
 										"SizeInBytes":	64,
-										"SourceBufferIndex":	2,
-										"SourceOffset":	64
-									}, {
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	109,
-										"SizeInBytes":	16,
-										"SourceBufferIndex":	2,
-										"SourceOffset":	224
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
 										"DestBufferPrecision":	104,
-										"SizeInBytes":	4,
+										"DestBufferOffset":	80
+									}, {
+										"SourceBufferIndex":	1,
+										"SourceOffset":	880,
+										"SizeInBytes":	12,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	144
+									}, {
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64,
+										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	16
+									}, {
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224,
+										"SizeInBytes":	16,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	109,
+										"DestBufferOffset":	0
+									}, {
 										"SourceBufferIndex":	3,
-										"SourceOffset":	0
+										"SourceOffset":	0,
+										"SizeInBytes":	4,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
 									}],
 								"SamplerMapInfos":	[],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	144
+										"Size":	160,
+										"TypeName":	104
 									}, {
-										"TypeName":	109,
-										"Size":	16
-									}]
-							},
-							"ShaderPath":	"defaultRes/shaders_package/Outline.vert/OPENGL/Code_.vertexshader"
+										"Size":	16,
+										"TypeName":	109
+									}],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
+							}
 						}
 					}, {
 						"first":	{
@@ -117,44 +125,59 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	3664,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	64,
 										"SourceBufferIndex":	1,
-										"SourceOffset":	128
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	128,
 										"SizeInBytes":	64,
-										"SourceBufferIndex":	2,
-										"SourceOffset":	64
-									}, {
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	109,
-										"SizeInBytes":	16,
-										"SourceBufferIndex":	2,
-										"SourceOffset":	224
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	64,
 										"DestBufferPrecision":	104,
-										"SizeInBytes":	3600,
+										"DestBufferOffset":	80
+									}, {
+										"SourceBufferIndex":	1,
+										"SourceOffset":	880,
+										"SizeInBytes":	12,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	144
+									}, {
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64,
+										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	16
+									}, {
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224,
+										"SizeInBytes":	16,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	109,
+										"DestBufferOffset":	0
+									}, {
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0,
+										"SizeInBytes":	4,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
+									}, {
 										"SourceBufferIndex":	4,
-										"SourceOffset":	0
+										"SourceOffset":	0,
+										"SizeInBytes":	3600,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	160
 									}],
 								"SamplerMapInfos":	[],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	3728
+										"Size":	3760,
+										"TypeName":	104
 									}, {
-										"TypeName":	109,
-										"Size":	16
-									}]
-							},
-							"ShaderPath":	"defaultRes/shaders_package/Outline.vert/OPENGL/Code_SKINNING.vertexshader"
+										"Size":	16,
+										"TypeName":	109
+									}],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
+							}
 						}
 					}],
 				"ShaderPlatformType":	2,

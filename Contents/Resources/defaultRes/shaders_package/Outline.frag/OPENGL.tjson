@@ -3,7 +3,7 @@
 			"Index":	0,
 			"ShaderPackage":	{
 				"Name":	"",
-				"Path":	"defaultRes/shaders_package/Outline.frag/OPENGL.tjson",
+				"Path":	"defaultRes/shaders_package//Outline.frag/OPENGL.tjson",
 				"ShaderDescriptors":	[{
 						"first":	{
 							"GlobalShaderMacroMask":	0,
@@ -41,20 +41,21 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	12,
 										"SourceBufferIndex":	3,
-										"SourceOffset":	0
+										"SourceOffset":	0,
+										"SizeInBytes":	12,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
 									}],
 								"SamplerMapInfos":	[],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	16
-									}]
-							},
-							"ShaderPath":	"defaultRes/shaders_package/Outline.frag/OPENGL/Code_.pixelshader"
+										"Size":	16,
+										"TypeName":	104
+									}],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
+							}
 						}
 					}],
 				"ShaderPlatformType":	2,

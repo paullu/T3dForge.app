@@ -10,7 +10,7 @@
               "Name": "LineWidth",
               "Type": 4,
               "Count": 1,
-              "Value": "0.002"
+              "Value": "0.15"
             },
             {
               "Name": "OutlineColor",

@@ -9,7 +9,7 @@
     <key>CFBundleExecutable</key>
     <string>T3dForge Helper NP</string>
     <key>CFBundleIdentifier</key>
-    <string>org.taobao.t3dforge.helper.NP</string>
+    <string>org.alibaba.t3dforge.helper.NP</string>
     <key>CFBundleName</key>
     <string>Electron Helper NP</string>
     <key>CFBundlePackageType</key>
@@ -27,6 +27,6 @@
     <key>NSSupportsAutomaticGraphicsSwitching</key>
     <true/>
     <key>CFBundleVersion</key>
-    <string>1.1.0</string>
+    <string>1.0.0</string>
   </dict>
 </plist>

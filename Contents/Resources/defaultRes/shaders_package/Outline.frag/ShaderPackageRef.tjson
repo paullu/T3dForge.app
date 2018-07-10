@@ -3,7 +3,7 @@
 			"Index":	0,
 			"ShaderPackageRef":	{
 				"Name":	"",
-				"Path":	"",
+				"Path":	"defaultRes/shaders_package//Outline.frag/ShaderPackageRef.tjson",
 				"OwnedShaderMacro":	{
 					"GlobalShaderMacroMask":	0,
 					"PrivateMacros":	0

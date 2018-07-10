@@ -5,7 +5,7 @@
     <key>BuildMachineOSBuild</key>
     <string>16G1314</string>
     <key>CFBundleIdentifier</key>
-    <string>org.taobao.t3dforge.helper</string>
+    <string>org.alibaba.t3dforge.helper</string>
     <key>CFBundleName</key>
     <string>Electron Helper</string>
     <key>CFBundlePackageType</key>
@@ -27,6 +27,6 @@
     <key>CFBundleDisplayName</key>
     <string>T3dForge Helper</string>
     <key>CFBundleVersion</key>
-    <string>1.1.0</string>
+    <string>1.0.0</string>
   </dict>
 </plist>
