@@ -1,0 +1,70 @@
+#define OPENGL_ES
+#ifndef OPENGL_ES
+#define highp 
+#define mediump 
+#define lowp 
+#endif
+
+// Uniforms
+//uniform mat4 u_MVP;					// Matrix to transform a position to clip space
+//uniform mat4 u_M;
+//uniform vec3 u_eyePos;
+uniform highp vec4 vu_h[9];
+// Primitive_LocalToWorld : Primitive 0 - 0 16
+// View_TranslatedWorldToClip : View 0 - 16 16
+
+attribute highp vec4 a_position;
+attribute vec3 a_tangent;
+attribute vec3 a_binormal;
+attribute vec3 a_normal;
+attribute vec2 a_texCoord;
+
+vec4 getPosition()
+{
+    return a_position;    
+}
+
+vec3 getNormal()
+{
+    return a_normal;
+}
+
+vec3 getTangent()
+{
+    return a_tangent;
+}
+
+vec3 getBinormal()
+{
+    return a_binormal;
+}
+
+varying highp vec2 v_texCoord;
+varying vec3 v_cameraDir_worldspace;
+
+varying vec3 v_normal_worldspace;
+varying vec3 v_tangent_worldspace;
+varying vec3 v_binormal_worldspace;
+
+void main()
+{
+    // Get the position and normal
+    vec4 position = getPosition();
+    vec3 normal = getNormal();
+	vec3 tangent = getTangent();
+	
+	mat4 u_M = mat4(vu_h[0], vu_h[1], vu_h[2], vu_h[3]);
+	mat4 u_VP = mat4(vu_h[4], vu_h[5], vu_h[6], vu_h[7]);
+	vec3 u_eyePos = vec3(vu_h[8].xyz);
+	v_normal_worldspace = normalize((u_M * vec4(normal, 0)).xyz);
+	v_tangent_worldspace = normalize((u_M * vec4(tangent, 0)).xyz);
+	v_binormal_worldspace = cross(normal, tangent);
+
+	v_texCoord = a_texCoord;
+	
+	vec3 position_worldspace = (u_M * position).xyz;
+	v_cameraDir_worldspace = normalize(u_eyePos - position_worldspace);
+	
+    // Transform position to clip space.
+    gl_Position = u_VP * u_M * position;
+}

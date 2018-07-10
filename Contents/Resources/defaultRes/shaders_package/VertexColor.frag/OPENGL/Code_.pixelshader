@@ -1,0 +1,12 @@
+#version 110 
+varying vec3 var_TEXCOORD4;
+void main()
+{
+	vec4 v0;
+	vec3 v1;
+	v1.xyz = var_TEXCOORD4;
+	v0.xyz = v1;
+	v0.w = 1.000000e+00;
+	gl_FragColor.xyzw = v0;
+}
+

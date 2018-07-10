@@ -1,0 +1,8 @@
+#version 110 
+uniform sampler2D ps0;
+varying vec2 var_TEXCOORD0;
+void main()
+{
+	gl_FragColor.xyzw = texture2D(ps0,var_TEXCOORD0);
+}
+

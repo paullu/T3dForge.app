@@ -1,0 +1,16 @@
+#version 110 
+varying vec4 var_TEXCOORD8;
+void main()
+{
+	float f0;
+	f0 = (((var_TEXCOORD8.z/var_TEXCOORD8.w)*5.000000e-01)+5.000000e-01);
+	vec4 v1;
+	v1.w = 1.000000e+00;
+	v1.x = f0;
+	v1.y = f0;
+	v1.z = f0;
+	vec4 v2;
+	v2.xyzw = v1;
+	gl_FragColor.xyzw = v2;
+}
+

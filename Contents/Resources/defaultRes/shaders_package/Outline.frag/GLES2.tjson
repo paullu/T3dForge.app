@@ -1,0 +1,64 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package/Outline.frag/GLES2.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	12,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"outlineColor",
+										"Offset":	0,
+										"BaseType":	4,
+										"ComponentCount":	3,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"OutlineColor",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	true
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	12,
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	16
+									}]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/Outline.frag/GLES2/Code_.pixelshader"
+						}
+					}],
+				"ShaderPlatformType":	0,
+				"ShaderType":	1
+			}
+		}]
+}

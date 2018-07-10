@@ -1,0 +1,21 @@
+#version 110 
+uniform sampler2D ps0;
+uniform sampler2D ps1;
+varying vec2 var_TEXCOORD0;
+void main()
+{
+	vec3 v0;
+	v0.x = (texture2D(ps1,var_TEXCOORD0).w+-6.274510e-02);
+	vec2 v1;
+	v1.xy = texture2D(ps0,var_TEXCOORD0).xw;
+	vec2 v2;
+	v2.xy = (v1+vec2(-5.000000e-01,-5.000000e-01));
+	v0.yz = v2;
+	vec4 v3;
+	v3.w = 1.000000e+00;
+	v3.xyz = ((vec3(1.596000e+00,-8.130000e-01,0.000000e+00)*v0.zzz)+((vec3(0.000000e+00,-3.920000e-01,2.017000e+00)*v0.yyy)+(vec3(1.164000e+00,1.164000e+00,1.164000e+00)*v0.xxx)));
+	vec4 v4;
+	v4.xyzw = v3;
+	gl_FragColor.xyzw = v4;
+}
+

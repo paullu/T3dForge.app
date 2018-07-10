@@ -1,0 +1,121 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package//DefaultMesh.vert/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	64,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	1,
+										"SourceOffset":	128
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	109,
+										"SizeInBytes":	16,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	128
+									}, {
+										"TypeName":	109,
+										"Size":	16
+									}]
+							}
+						}
+					}, {
+						"first":	{
+							"GlobalShaderMacroMask":	1,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	1,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	3664,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	1,
+										"SourceOffset":	128
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	109,
+										"SizeInBytes":	16,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	64,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	3600,
+										"SourceBufferIndex":	4,
+										"SourceOffset":	0
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	3728
+									}, {
+										"TypeName":	109,
+										"Size":	16
+									}]
+							}
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	0
+			}
+		}]
+}

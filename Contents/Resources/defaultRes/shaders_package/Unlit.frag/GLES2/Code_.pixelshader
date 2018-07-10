@@ -1,0 +1,36 @@
+#version 100 
+precision mediump float;
+precision mediump int;
+
+#ifndef DONTEMITSAMPLERDEFAULTPRECISION
+precision mediump sampler2D;
+precision mediump samplerCube;
+
+#endif
+
+#ifdef TEXCOORDPRECISIONWORKAROUND
+vec4 texture2DTexCoordPrecisionWorkaround(sampler2D p, vec2 tcoord)
+{
+	return texture2D(p, tcoord);
+}
+#define texture2D texture2DTexCoordPrecisionWorkaround
+#endif
+uniform highp sampler2D ps0;
+varying highp vec2 var_TEXCOORD0;
+void main()
+{
+	highp vec4 v0;
+	highp vec3 v1;
+	highp vec3 v2;
+	v2.xyz = texture2D(ps0,var_TEXCOORD0).xyz;
+	v1.xyz = (pow(v2,vec3(2.200000e+00,2.200000e+00,2.200000e+00))*vec3(6.250000e-02,6.250000e-02,6.250000e-02));
+	highp float f3;
+	f3 = clamp(max(max(v1.x,v1.y),max(v1.z,1.000000e-06)),0.000000e+00,1.000000e+00);
+	v0.w = f3;
+	v0.w = (ceil((f3*2.550000e+02))/2.550000e+02);
+	v0.xyz = (v1/v0.www);
+	vec4 v4;
+	v4.xyzw = v0;
+	gl_FragColor.xyzw = v4;
+}
+

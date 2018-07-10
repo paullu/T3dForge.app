@@ -1,0 +1,85 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package/Particle.frag/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	2,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"DiffuseTexture",
+										"Offset":	0,
+										"BaseType":	6,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"DiffuseTexture",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"DiffuseTexture_sampler",
+										"Offset":	1,
+										"BaseType":	5,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"DiffuseTexture_sampler",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	115,
+										"SizeInBytes":	0,
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0
+									}],
+								"SamplerMapInfos":	[{
+										"SourceBufferIndex":	3,
+										"SourceBufferOffset":	1,
+										"Name":	""
+									}],
+								"PackedArrayInfos":	[{
+										"TypeName":	115,
+										"Size":	0
+									}]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/Particle.frag/OPENGL/Code_.pixelshader"
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	1
+			}
+		}]
+}

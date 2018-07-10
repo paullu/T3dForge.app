@@ -1,0 +1,61 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"baseRes/base.vert/GLES2.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	64,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	1,
+										"SourceOffset":	128
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	128,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	12,
+										"SourceBufferIndex":	1,
+										"SourceOffset":	880
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	144
+									}]
+							},
+							"ShaderPath":	"baseRes/base.vert/GLES2/Code_.vertexshader"
+						}
+					}],
+				"ShaderPlatformType":	0,
+				"ShaderType":	0
+			}
+		}]
+}

@@ -1,0 +1,158 @@
+#version 100 
+precision mediump float;
+precision mediump int;
+
+#ifndef DONTEMITSAMPLERDEFAULTPRECISION
+precision mediump sampler2D;
+precision mediump samplerCube;
+
+#endif
+
+#ifdef TEXCOORDPRECISIONWORKAROUND
+vec4 texture2DTexCoordPrecisionWorkaround(sampler2D p, vec2 tcoord)
+{
+	return texture2D(p, tcoord);
+}
+#define texture2D texture2DTexCoordPrecisionWorkaround
+#endif
+uniform highp vec4 pu_h[1];
+uniform vec4 pu_m[5];
+uniform highp sampler2D ps0;
+varying highp vec3 var_TEXCOORD3;
+varying highp vec4 var_TEXCOORD8;
+void main()
+{
+	vec3 v0;
+	vec3 v1;
+	v1.xyz = normalize((vec3(-1.000000e-02,-1.000000e-02,-1.000000e-02)*(var_TEXCOORD8.xyz+(-pu_h[0].xyz))));
+	v0.xyz = v1;
+	vec3 v2;
+	vec3 v3;
+	v3.xyz = var_TEXCOORD3;
+	v2.xyz = normalize(v3);
+	vec3 v4;
+	vec3 v5;
+	v5.xyz = normalize(v2);
+	v4.xyz = ((-v0)+((v5*vec3(dot(v5,v0)))*vec3(2.000000e+00,2.000000e+00,2.000000e+00)));
+	vec3 v6;
+	v6.xyz = ((pu_m[0].xyz*pu_m[1].xxx)*vec3(2.000000e+00,2.000000e+00,2.000000e+00));
+	float h7;
+	h7 = clamp(pu_m[2].x,0.000000e+00,1.000000e+00);
+	vec3 v8;
+	v8.xyz = (vec3((4.000000e-02+(-(4.000000e-02*h7))))+(v6*vec3(h7)));
+	float h9;
+	h9 = clamp(pu_m[3].x,1.000000e-04,1.000000e+00);
+	vec2 v10;
+	vec4 v11;
+	v11.xyzw = ((vec4(clamp(h9,1.200000e-01,1.000000e+00))*vec4(-1.000000e+00,-2.750000e-02,-5.720000e-01,2.200000e-02))+vec4(1.000000e+00,4.250000e-02,1.040000e+00,-4.000000e-02));
+	vec2 v12;
+	v12.xy = ((vec2(-1.040000e+00,1.040000e+00)*vec2(((min((v11.x*v11.x),exp2((-9.280000e+00*max(dot(v2,v0),0.000000e+00))))*v11.x)+v11.y)))+v11.zw);
+	v10.xy = v12;
+	v10.y = (v12.y*clamp((5.000000e+01*v8.y),0.000000e+00,1.000000e+00));
+	highp float f13;
+	highp float f14;
+	f14 = h9;
+	f13 = (8.000000e+00+(-(3.000000e+00+(-(1.150000e+00*log2(f14))))));
+	vec2 v15;
+	vec2 v16;
+	vec2 v17;
+	v17.x = ((1.000000e+00+(atan(v4.x,v4.z)/3.141593e+00))/2.000000e+00);
+	v17.y = (acos((-v4.y))/3.141593e+00);
+	highp float f18;
+	f18 = pow(2.000000e+00,(-clamp(floor(f13),0.000000e+00,8.000000e+00)));
+	vec2 v19;
+	float h20;
+	h20 = f18;
+	v19.x = h20;
+	float h21;
+	h21 = (f18*5.000000e-01);
+	v19.y = h21;
+	vec2 v22;
+	v22.xy = (v17*v19);
+	v16.xy = v22;
+	highp float f23;
+	f23 = v22.y;
+	float h24;
+	h24 = clamp(f23,1.953125e-03,((f18*5.000000e-01)+-1.953125e-03));
+	v16.y = h24;
+	float h25;
+	h25 = (1.000000e+00+(-f18));
+	v16.y = (v16.y+h25);
+	highp vec4 v26;
+	highp vec2 v27;
+	v27.xy = v16;
+	v26.xyzw = texture2D(ps0,v27);
+	highp float f28;
+	f28 = pow(2.000000e+00,(-clamp(ceil(f13),0.000000e+00,8.000000e+00)));
+	vec2 v29;
+	float h30;
+	h30 = f28;
+	v29.x = h30;
+	float h31;
+	h31 = (f28*5.000000e-01);
+	v29.y = h31;
+	vec2 v32;
+	v32.xy = (v17*v29);
+	v15.xy = v32;
+	highp float f33;
+	f33 = v32.y;
+	float h34;
+	h34 = clamp(f33,1.953125e-03,((f28*5.000000e-01)+-1.953125e-03));
+	v15.y = h34;
+	float h35;
+	h35 = (1.000000e+00+(-f28));
+	v15.y = (v15.y+h35);
+	highp vec4 v36;
+	highp vec2 v37;
+	v37.xy = v15;
+	v36.xyzw = texture2D(ps0,v37);
+	vec2 v38;
+	vec2 v39;
+	vec2 v40;
+	v40.x = ((1.000000e+00+(atan(v2.x,v2.z)/3.141593e+00))/2.000000e+00);
+	v40.y = (acos((-v2.y))/3.141593e+00);
+	vec2 v41;
+	v41.xy = (v40*vec2(3.125000e-02,1.562500e-02));
+	v39.xy = v41;
+	highp float f42;
+	f42 = v41.y;
+	float h43;
+	h43 = clamp(f42,1.953125e-03,1.367188e-02);
+	v39.y = h43;
+	v39.y = (v39.y+9.687500e-01);
+	highp vec4 v44;
+	highp vec2 v45;
+	v45.xy = v39;
+	v44.xyzw = texture2D(ps0,v45);
+	vec2 v46;
+	v46.xy = (v40*vec2(3.125000e-02,1.562500e-02));
+	v38.xy = v46;
+	highp float f47;
+	f47 = v46.y;
+	float h48;
+	h48 = clamp(f47,1.953125e-03,1.367188e-02);
+	v38.y = h48;
+	v38.y = (v38.y+9.687500e-01);
+	highp vec4 v49;
+	highp vec2 v50;
+	v50.xy = v38;
+	v49.xyzw = texture2D(ps0,v50);
+	highp vec4 v51;
+	highp vec3 v52;
+	vec3 v53;
+	v53.xyz = mix((v26.xyz*vec3((v26.w*1.600000e+01))),(v36.xyz*vec3((v36.w*1.600000e+01))),vec3(fract(f13)));
+	vec3 v54;
+	v54.xyz = mix((v44.xyz*vec3((v44.w*1.600000e+01))),(v49.xyz*vec3((v49.w*1.600000e+01))),vec3(0.000000e+00,0.000000e+00,0.000000e+00));
+	highp vec3 v55;
+	v55.xyz = (((((v8*v12.xxx)+v10.yyy)*v53)*vec3(clamp((pu_m[4].x*2.000000e+00),0.000000e+00,1.000000e+00)))+((v6+(-(v6*vec3(h7))))*v54));
+	v52.xyz = (v55*vec3(6.250000e-02,6.250000e-02,6.250000e-02));
+	highp float f56;
+	f56 = clamp(max(max(v52.x,v52.y),max(v52.z,1.000000e-06)),0.000000e+00,1.000000e+00);
+	v51.w = f56;
+	v51.w = (ceil((f56*2.550000e+02))/2.550000e+02);
+	v51.xyz = (v52/v51.www);
+	vec4 v57;
+	v57.xyzw = v51;
+	gl_FragColor.xyzw = v57;
+}
+

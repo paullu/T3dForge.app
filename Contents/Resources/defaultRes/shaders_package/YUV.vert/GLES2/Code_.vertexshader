@@ -1,0 +1,31 @@
+#version 100 
+attribute highp vec3 a_position;
+attribute highp vec2 a_texCoord;
+varying highp vec2 var_TEXCOORD0;
+varying highp vec3 var_TEXCOORD1;
+varying highp vec3 var_TEXCOORD2;
+varying highp vec3 var_TEXCOORD3;
+varying highp vec3 var_TEXCOORD4;
+varying highp vec4 var_TEXCOORD8;
+void main()
+{
+	highp vec2 v0;
+	highp vec3 v1;
+	highp vec3 v2;
+	highp vec3 v3;
+	highp vec3 v4;
+	highp vec4 v5;
+	highp vec4 v6;
+	v6.zw = vec2(1.000000e+00,1.000000e+00);
+	v6.xy = a_position.xy;
+	v0.x = (1.000000e+00+(-a_texCoord.y));
+	v0.y = (1.000000e+00+(-a_texCoord.x));
+	var_TEXCOORD0.xy = v0;
+	var_TEXCOORD1.xyz = v1;
+	var_TEXCOORD2.xyz = v2;
+	var_TEXCOORD3.xyz = v3;
+	var_TEXCOORD4.xyz = v4;
+	var_TEXCOORD8.xyzw = v5;
+	gl_Position.xyzw = v6;
+}
+

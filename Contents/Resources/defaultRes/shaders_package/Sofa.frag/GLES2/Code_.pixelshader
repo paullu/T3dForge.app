@@ -1,0 +1,144 @@
+#version 100 
+precision mediump float;
+precision mediump int;
+
+#ifndef DONTEMITSAMPLERDEFAULTPRECISION
+precision mediump sampler2D;
+precision mediump samplerCube;
+
+#endif
+
+#ifdef TEXCOORDPRECISIONWORKAROUND
+vec4 texture2DTexCoordPrecisionWorkaround(sampler2D p, vec2 tcoord)
+{
+	return texture2D(p, tcoord);
+}
+#define texture2D texture2DTexCoordPrecisionWorkaround
+#endif
+uniform highp vec4 pu_h[1];
+uniform vec4 pu_m[3];
+uniform highp sampler2D ps1;
+uniform highp sampler2D ps2;
+uniform highp sampler2D ps0;
+varying highp vec2 var_TEXCOORD0;
+varying highp vec3 var_TEXCOORD1;
+varying highp vec3 var_TEXCOORD2;
+varying highp vec3 var_TEXCOORD3;
+varying highp vec4 var_TEXCOORD8;
+void main()
+{
+	float h0;
+	h0 = pu_m[2].x;
+	vec3 v1;
+	vec3 v2;
+	v2.xyz = normalize((vec3(-1.000000e-02,-1.000000e-02,-1.000000e-02)*(var_TEXCOORD8.xyz+(-pu_h[0].xyz))));
+	v1.xyz = v2;
+	vec3 v3;
+	vec4 v4;
+	v4.w = 1.000000e+00;
+	highp float f5;
+	f5 = h0;
+	v4.xyz = ((texture2D(ps2,(var_TEXCOORD0*vec2(f5))).xyz*vec3(2.000000e+00,2.000000e+00,2.000000e+00))+vec3(-1.000000e+00,-1.000000e+00,-1.000000e+00));
+	v3.xyz = v4.xyz;
+	v3.xy = (v4.xy*pu_m[1].xx);
+	vec3 v6;
+	vec3 v7;
+	v7.xyz = var_TEXCOORD3;
+	vec3 v8;
+	v8.xyz = var_TEXCOORD2;
+	vec3 v9;
+	v9.xyz = var_TEXCOORD1;
+	v6.xyz = normalize(((v7*v4.zzz)+((v8*v3.yyy)+(v9*v3.xxx))));
+	vec3 v10;
+	vec3 v11;
+	v11.xyz = normalize(v6);
+	v10.xyz = ((-v1)+((v11*vec3(dot(v11,v1)))*vec3(2.000000e+00,2.000000e+00,2.000000e+00)));
+	float h12;
+	highp float f13;
+	f13 = h0;
+	highp float f14;
+	f14 = pu_m[0].x;
+	float h15;
+	h15 = ((dot(mix(texture2D(ps0,(var_TEXCOORD0*vec2(f13))).xyz,vec3(4.745100e-01,4.745100e-01,4.745100e-01),vec3(7.000000e-01,7.000000e-01,7.000000e-01)),vec3(3.000000e-01,5.900000e-01,1.100000e-01))*f14)*2.000000e+00);
+	h12 = clamp(h15,0.000000e+00,1.000000e+00);
+	float h16;
+	h16 = (4.000000e-02*h12);
+	vec2 v17;
+	vec2 v18;
+	v18.xy = ((vec2(-1.040000e+00,1.040000e+00)*vec2(((min(4.329640e-01,exp2((-9.280000e+00*max(dot(v6,v1),0.000000e+00))))*6.580000e-01)+3.309500e-02)))+vec2(8.443760e-01,-3.247600e-02));
+	v17.xy = v18;
+	v17.y = (v18.y*clamp((5.000000e+01*h16),0.000000e+00,1.000000e+00));
+	highp float f19;
+	highp float f20;
+	f20 = 3.420000e-01;
+	f19 = (8.000000e+00+(-(3.000000e+00+(-(1.150000e+00*log2(f20))))));
+	vec2 v21;
+	vec2 v22;
+	vec2 v23;
+	v23.x = ((1.000000e+00+(atan(v10.x,v10.z)/3.141593e+00))/2.000000e+00);
+	v23.y = (acos((-v10.y))/3.141593e+00);
+	highp float f24;
+	f24 = pow(2.000000e+00,(-clamp(floor(f19),0.000000e+00,8.000000e+00)));
+	vec2 v25;
+	float h26;
+	h26 = f24;
+	v25.x = h26;
+	float h27;
+	h27 = (f24*5.000000e-01);
+	v25.y = h27;
+	vec2 v28;
+	v28.xy = (v23*v25);
+	v22.xy = v28;
+	highp float f29;
+	f29 = v28.y;
+	float h30;
+	h30 = clamp(f29,1.953125e-03,((f24*5.000000e-01)+-1.953125e-03));
+	v22.y = h30;
+	float h31;
+	h31 = (1.000000e+00+(-f24));
+	v22.y = (v22.y+h31);
+	highp vec4 v32;
+	highp vec2 v33;
+	v33.xy = v22;
+	v32.xyzw = texture2D(ps1,v33);
+	highp float f34;
+	f34 = pow(2.000000e+00,(-clamp(ceil(f19),0.000000e+00,8.000000e+00)));
+	vec2 v35;
+	float h36;
+	h36 = f34;
+	v35.x = h36;
+	float h37;
+	h37 = (f34*5.000000e-01);
+	v35.y = h37;
+	vec2 v38;
+	v38.xy = (v23*v35);
+	v21.xy = v38;
+	highp float f39;
+	f39 = v38.y;
+	float h40;
+	h40 = clamp(f39,1.953125e-03,((f34*5.000000e-01)+-1.953125e-03));
+	v21.y = h40;
+	float h41;
+	h41 = (1.000000e+00+(-f34));
+	v21.y = (v21.y+h41);
+	highp vec4 v42;
+	highp vec2 v43;
+	v43.xy = v21;
+	v42.xyzw = texture2D(ps1,v43);
+	highp vec4 v44;
+	highp vec3 v45;
+	vec3 v46;
+	v46.xyz = mix((v32.xyz*vec3((v32.w*1.600000e+01))),(v42.xyz*vec3((v42.w*1.600000e+01))),vec3(fract(f19)));
+	highp vec3 v47;
+	v47.xyz = ((((vec3(h16)*v18.xxx)+v17.yyy)*v46)*vec3(h12));
+	v45.xyz = (v47*vec3(6.250000e-02,6.250000e-02,6.250000e-02));
+	highp float f48;
+	f48 = clamp(max(max(v45.x,v45.y),max(v45.z,1.000000e-06)),0.000000e+00,1.000000e+00);
+	v44.w = f48;
+	v44.w = (ceil((f48*2.550000e+02))/2.550000e+02);
+	v44.xyz = (v45/v44.www);
+	vec4 v49;
+	v49.xyzw = v44;
+	gl_FragColor.xyzw = v49;
+}
+

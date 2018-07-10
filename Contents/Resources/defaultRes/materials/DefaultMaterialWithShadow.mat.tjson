@@ -1,0 +1,227 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"Material":	{
+				"Name":	"default_skinning",
+				"Path":	"",
+				"MaterialParameters":	{
+					"Params":	[{
+							"Name":	"DiffuseTexture",
+							"Type":	8,
+							"Count":	1,
+							"Value":	{
+								"Path":	"baseRes/textures/Diffuse.png",
+								"Index":	-1
+							}
+						}, {
+							"Name":	"DiffuseTexture_sampler",
+							"Type":	10,
+							"Count":	1,
+							"Value":	{
+								"Path":	"",
+								"Index":	1
+							}
+						}, {
+							"Name":	"NormalTexture",
+							"Type":	8,
+							"Count":	1,
+							"Value":	{
+								"Path":	"baseRes/textures/Normal.png",
+								"Index":	-1
+							}
+						}, {
+							"Name":	"NormalTexture_sampler",
+							"Type":	10,
+							"Count":	1,
+							"Value":	{
+								"Path":	"",
+								"Index":	2
+							}
+						}, {
+							"Name":	"EnvTexture",
+							"Type":	8,
+							"Count":	1,
+							"Value":	{
+								"Path": "defaultRes/textures/uffizi-large.png",
+								"Index": -1
+							}
+						}, {
+							"Name":	"EnvTexture_sampler",
+							"Type":	10,
+							"Count":	1,
+							"Value":	{
+								"Path":	"",
+								"Index":	3
+							}
+						}, {
+							"Name":	"RMATexture",
+							"Type":	8,
+							"Count":	1,
+							"Value":	{
+								"Path": "baseRes/textures/Diffuse.png",
+								"Index": -1
+							}
+						}, {
+							"Name":	"RMATexture_sampler",
+							"Type":	10,
+							"Count":	1,
+							"Value":	{
+								"Path":	"",
+								"Index":	4
+							}
+						}, 
+						{
+							"Name":	"ShadowMap_sampler",
+							"Type":	10,
+							"Count":	1,
+							"Value":	{
+								"Path":	"",
+								"Index":	7
+							}
+						}, {
+							"Name":	"RoughnessIntensity",
+							"Type":	4,
+							"Count":	1,
+							"Value":	"1.00"
+						}, {
+							"Name":	"MetallicIntensity",
+							"Type":	4,
+							"Count":	1,
+							"Value":	"0.00"
+						}, {
+							"Name":	"SpecularIntensity",
+							"Type":	4,
+							"Count":	1,
+							"Value":	"0.20"
+						}, {
+							"Name":	"DiffuseIntensity",
+							"Type":	4,
+							"Count":	1,
+							"Value":	"0.10"
+						}]
+				},
+				"Techniques":	[{
+						"Path":	"",
+						"Index":	5
+					}]
+			}
+		}, {
+			"Index":	1,
+			"Sampler":	{
+				"Name":	"DiffuseTexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	2,
+			"Sampler":	{
+				"Name":	"NormalTexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	3,
+			"Sampler":	{
+				"Name":	"EnvTexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	4,
+			"Sampler":	{
+				"Name":	"RMATexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	5,
+			"Technique":	{
+				"Name":	"",
+				"Path":	"",
+				"Material":	{
+					"Path":	"",
+					"Index":	0
+				},
+				"TechLevel":	{
+					"Quality":	0,
+					"ShaderModel":	0
+				},
+				"Passes":	[{
+						"Path":	"",
+						"Index":	6
+					}]
+			}
+		}, {
+			"Index":	6,
+			"Pass":	{
+				"Name":	"",
+				"Path":	"",
+				"Technique":	{
+					"Path":	"",
+					"Index":	5
+				},
+				"RenderPrimitiveGroupId":	0,
+				"VertexShaderPackage":	{
+					"Path":	"defaultRes/shaders_package/DefaultMeshWithShadow.vert/ShaderPackageRef.tjson",
+					"Index": -1
+				},
+				"PixelShaderPackage":	{
+					"Path":	"defaultRes/shaders_package/DefaultMeshWithShadow.frag/ShaderPackageRef.tjson",
+					"Index": -1
+				},
+				"BlendStates":	[{
+						"EnableBlending":	false,
+						"ColorBlendOp":	0,
+						"ColorSrcBlend":	4,
+						"ColorDestBlend":	5,
+						"AlphaBlendOp":	0,
+						"AlphaSrcBlend":	1,
+						"AlphaDestBlend":	1,
+						"ColorWriteMask":	15
+					}],
+				"DepthStencilState":	{
+					"EnableDepthTest":	true,
+					"EnableDepthWrite":	true,
+					"DepthTestFunc":	1,
+					"EnableFrontFaceStencil":	false,
+					"FrontFaceStencilTest":	5,
+					"FrontFaceStencilFailStencilOp":	0,
+					"FrontFaceDepthFailStencilOp":	0,
+					"FrontFacePassStencilOp":	0,
+					"EnableBackFaceStencil":	false,
+					"BackFaceStencilTest":	5,
+					"BackFaceStencilFailStencilOp":	0,
+					"BackFaceDepthFailStencilOp":	0,
+					"BackFacePassStencilOp":	0,
+					"StencilReadMask":	255,
+					"StencilWriteMask":	255,
+					"StencilRef":	255
+				},
+				"FillMode":	2,
+				"CullMode":	1
+			}
+		},
+		{
+			"Index":	7,
+			"Sampler":	{
+				"Name":	"ShadowMap_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}]
+}

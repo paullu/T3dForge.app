@@ -1,0 +1,35 @@
+#version 100 
+uniform highp vec4 vu_h[8];
+attribute highp vec3 a_position;
+attribute vec4 a_color;
+attribute highp vec2 a_texCoord;
+varying highp vec2 var_TEXCOORD0;
+varying highp vec3 var_TEXCOORD1;
+varying highp vec3 var_TEXCOORD2;
+varying highp vec3 var_TEXCOORD3;
+varying highp vec3 var_TEXCOORD4;
+varying highp vec4 var_TEXCOORD8;
+void main()
+{
+	highp vec3 v0;
+	highp vec3 v1;
+	highp vec3 v2;
+	highp vec4 v3;
+	vec4 v4;
+	v4.w = 1.000000e+00;
+	vec3 v5;
+	v5.xyz = a_position;
+	v4.xyz = v5;
+	highp vec4 v6;
+	v6.xyzw = (vu_h[3]+((vu_h[2]*v4.zzzz)+((vu_h[1]*v4.yyyy)+(vu_h[0]*v4.xxxx))));
+	var_TEXCOORD0.xy = a_texCoord;
+	var_TEXCOORD1.xyz = v0;
+	var_TEXCOORD2.xyz = v1;
+	var_TEXCOORD3.xyz = v2;
+	highp vec3 v7;
+	v7.xyz = a_color.xyz;
+	var_TEXCOORD4.xyz = v7;
+	var_TEXCOORD8.xyzw = v3;
+	gl_Position.xyzw = ((vu_h[7]*v6.wwww)+((vu_h[6]*v6.zzzz)+((vu_h[5]*v6.yyyy)+(vu_h[4]*v6.xxxx))));
+}
+

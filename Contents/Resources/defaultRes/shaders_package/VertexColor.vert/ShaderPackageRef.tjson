@@ -1,0 +1,13 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackageRef":	{
+				"Name":	"",
+				"Path":	"",
+				"OwnedShaderMacro":	{
+					"GlobalShaderMacroMask":	0,
+					"PrivateMacros":	0
+				}
+			}
+		}]
+}

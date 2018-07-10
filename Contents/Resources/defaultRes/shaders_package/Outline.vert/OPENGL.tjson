@@ -1,0 +1,164 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package/Outline.vert/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	4,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"lineWidth",
+										"Offset":	0,
+										"BaseType":	4,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"LineWidth",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	true
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	80,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	1,
+										"SourceOffset":	128
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	16,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	109,
+										"SizeInBytes":	16,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	4,
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	144
+									}, {
+										"TypeName":	109,
+										"Size":	16
+									}]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/Outline.vert/OPENGL/Code_.vertexshader"
+						}
+					}, {
+						"first":	{
+							"GlobalShaderMacroMask":	1,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	1,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	4,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"lineWidth",
+										"Offset":	0,
+										"BaseType":	4,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"LineWidth",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	true
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	3664,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	1,
+										"SourceOffset":	128
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	64,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	64
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	109,
+										"SizeInBytes":	16,
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	64,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	3600,
+										"SourceBufferIndex":	4,
+										"SourceOffset":	0
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	3728
+									}, {
+										"TypeName":	109,
+										"Size":	16
+									}]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/Outline.vert/OPENGL/Code_SKINNING.vertexshader"
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	0
+			}
+		}]
+}

@@ -1,0 +1,64 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package/PickerBlend.frag/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	16,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"pickExColor",
+										"Offset":	0,
+										"BaseType":	4,
+										"ComponentCount":	4,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"pickExColor",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	104,
+										"SizeInBytes":	16,
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[{
+										"TypeName":	104,
+										"Size":	16
+									}]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/PickerBlend.frag/OPENGL/Code_.pixelshader"
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	1
+			}
+		}]
+}

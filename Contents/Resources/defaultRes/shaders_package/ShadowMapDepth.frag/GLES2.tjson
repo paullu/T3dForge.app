@@ -1,0 +1,36 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package//ShadowMapDepth.frag/GLES2.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[]
+							}
+						}
+					}],
+				"ShaderPlatformType":	0,
+				"ShaderType":	1
+			}
+		}]
+}

@@ -1,0 +1,26 @@
+#ifndef OPENGL_ES
+#define highp 
+#define mediump 
+#define lowp 
+#else
+precision highp float;
+precision highp int;
+precision highp sampler2D;
+precision highp samplerCube;
+#endif
+
+varying highp vec2 v_texCoord;
+varying vec3 v_cameraDir_worldspace;
+varying vec3 v_normal_worldspace;
+
+void main()
+{
+	
+	vec3 N = v_normal_worldspace;
+
+	vec3 V = normalize(v_cameraDir_worldspace);
+	float NoV = clamp( abs( dot(N, V) ) + 1e-5, 0.0, 1.0 );
+	
+	vec3 finalColor = NoV * vec3(1.0, 0.0, 0.0);
+	gl_FragColor = vec4(finalColor, 1.0);
+}

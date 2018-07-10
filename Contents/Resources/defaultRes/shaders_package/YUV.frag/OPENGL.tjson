@@ -1,0 +1,130 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package/YUV.frag/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	4,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"YTexture",
+										"Offset":	0,
+										"BaseType":	6,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"YTexture",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"UVTexture",
+										"Offset":	1,
+										"BaseType":	6,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"UVTexture",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"YTexture_sampler",
+										"Offset":	2,
+										"BaseType":	5,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"YTexture_sampler",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"UVTexture_sampler",
+										"Offset":	3,
+										"BaseType":	5,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"UVTexture_sampler",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	1,
+										"DestBufferPrecision":	115,
+										"SizeInBytes":	0,
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0
+									}, {
+										"DestBufferIndex":	0,
+										"DestBufferOffset":	0,
+										"DestBufferPrecision":	115,
+										"SizeInBytes":	0,
+										"SourceBufferIndex":	3,
+										"SourceOffset":	1
+									}],
+								"SamplerMapInfos":	[{
+										"SourceBufferIndex":	3,
+										"SourceBufferOffset":	3,
+										"Name":	""
+									}, {
+										"SourceBufferIndex":	3,
+										"SourceBufferOffset":	2,
+										"Name":	""
+									}],
+								"PackedArrayInfos":	[{
+										"TypeName":	115,
+										"Size":	0
+									}]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/YUV.frag/OPENGL/Code_.pixelshader"
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	1
+			}
+		}]
+}

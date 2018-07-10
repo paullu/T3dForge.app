@@ -1,0 +1,44 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"PostProcessEffect":	{
+				"Name":	"",
+				"Path":	"",
+				"Enabled":	true,
+				"Material":	{
+					"Path":	"defaultRes/materials/PostProcessToneMapping.mat.tjson",
+					"Index":	-1
+				},
+				"PostProcessPasses":	[{
+						"Path":	"",
+						"Index":	1
+					}]
+			}
+		}, {
+			"Index":	1,
+			"PostProcessPass":	{
+				"Name":	"",
+				"Path":	"",
+				"RenderTargetIDs":	[{
+						"RenderTextureID":	{
+							"TextureName":	"ToneMappingColor",
+							"SizeType":	1,
+							"Mipmaps":	1,
+							"ViewSize":	{
+								"x":	1,
+								"y":	1
+							}
+						},
+						"LoadAction":	2,
+						"Attachment":	0,
+						"ClearValue":	{
+							"x":	0,
+							"y":	0,
+							"z":	0,
+							"w":	0
+						},
+						"OutputAction":	1
+					}]
+			}
+		}]
+}

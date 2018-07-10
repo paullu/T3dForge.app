@@ -1,0 +1,13 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackageRef":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package//DefaultMesh.vert/ShaderPackageRef.tjson",
+				"OwnedShaderMacro":	{
+					"GlobalShaderMacroMask":	1,
+					"PrivateMacros":	0
+				}
+			}
+		}]
+}

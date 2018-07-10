@@ -1,0 +1,496 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"RenderPipelineConfig":	{
+				"Name":	"RGBMPipeline",
+				"Path":	"",
+				"RenderTargetDescriptors":	[{
+						"Name":	"OffscreenTarget",
+						"RenderTargetIDs":	[{
+								"RenderTextureID":	{
+									"TextureName":	"OffscreenColor",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	2
+								},
+								"LoadAction":	2,
+								"Attachment":	0,
+								"ClearValue":	{
+									"x":	0,
+									"y":	0,
+									"z":	0,
+									"w":	0
+								},
+								"OutputAction":	0
+							}, {
+								"RenderTextureID":	{
+									"TextureName":	"OffscreenDepthStencil",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	11
+								},
+								"LoadAction":	2,
+								"Attachment":	4,
+								"ClearValue":	{
+									"x":	1,
+									"y":	1,
+									"z":	1,
+									"w":	1
+								},
+								"OutputAction":	0
+							}]
+					}, {
+						"Name":	"HDRTarget",
+						"RenderTargetIDs":	[{
+								"RenderTextureID":	{
+									"TextureName":	"HDRColor",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	2
+								},
+								"LoadAction":	2,
+								"Attachment":	0,
+								"ClearValue":	{
+									"x":	0,
+									"y":	0,
+									"z":	0,
+									"w":	0
+								},
+								"OutputAction":	1
+							}, {
+								"RenderTextureID":	{
+									"TextureName":	"MainDepthStencil",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	11
+								},
+								"LoadAction":	2,
+								"Attachment":	4,
+								"ClearValue":	{
+									"x":	1,
+									"y":	1,
+									"z":	1,
+									"w":	1
+								},
+								"OutputAction":	2
+							}, {
+								"RenderTextureID":	{
+									"TextureName":	"MainDepthStencil",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	11
+								},
+								"LoadAction":	2,
+								"Attachment":	5,
+								"ClearValue":	{
+									"x":	1,
+									"y":	1,
+									"z":	1,
+									"w":	1
+								},
+								"OutputAction":	3
+							}]
+					}, {
+						"Name":	"LDRTarget",
+						"RenderTargetIDs":	[{
+								"RenderTextureID":	{
+									"TextureName":	"LDRColor",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	2
+								},
+								"LoadAction":	2,
+								"Attachment":	0,
+								"ClearValue":	{
+									"x":	0,
+									"y":	0,
+									"z":	0,
+									"w":	0
+								},
+								"OutputAction":	1
+							}, {
+								"RenderTextureID":	{
+									"TextureName":	"MainDepthStencil",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	11
+								},
+								"LoadAction":	1,
+								"Attachment":	4,
+								"ClearValue":	{
+									"x":	1,
+									"y":	1,
+									"z":	1,
+									"w":	1
+								},
+								"OutputAction":	2
+							}, {
+								"RenderTextureID":	{
+									"TextureName":	"MainDepthStencil",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	11
+								},
+								"LoadAction":	1,
+								"Attachment":	5,
+								"ClearValue":	{
+									"x":	1,
+									"y":	1,
+									"z":	1,
+									"w":	1
+								},
+								"OutputAction":	3
+							}]
+					}, {
+						"Name":	"ShadowMapTarget",
+						"RenderTargetIDs":	[{
+								"RenderTextureID":	{
+									"TextureName":	"ShadowMap",
+									"SizeType":	0,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1024,
+										"y":	1024
+									},
+									"PixelFormat":	2
+								},
+								"LoadAction":	2,
+								"Attachment":	0,
+								"ClearValue":	{
+									"x":	0,
+									"y":	0,
+									"z":	0,
+									"w":	0
+								},
+								"OutputAction":	0
+							}, {
+								"RenderTextureID":	{
+									"TextureName":	"ShadowMapDepth",
+									"SizeType":	0,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1024,
+										"y":	1024
+									},
+									"PixelFormat":	11
+								},
+								"LoadAction":	2,
+								"Attachment":	4,
+								"ClearValue":	{
+									"x":	1,
+									"y":	1,
+									"z":	1,
+									"w":	1
+								},
+								"OutputAction":	0
+							}]
+					}, {
+						"Name":	"DefaultTarget",
+						"RenderTargetIDs":	[{
+								"RenderTextureID":	{
+									"TextureName":	"DefaultSceneColor",
+									"SizeType":	1,
+									"Mipmaps":	1,
+									"ViewSize":	{
+										"x":	1,
+										"y":	1
+									},
+									"PixelFormat":	2
+								},
+								"LoadAction":	2,
+								"Attachment":	0,
+								"ClearValue":	{
+									"x":	0,
+									"y":	0,
+									"z":	0,
+									"w":	0
+								},
+								"OutputAction":	1
+							}]
+					}],
+				"PipelineStages":	[{
+						"Path":	"",
+						"Index":	1
+					}, {
+						"Path":	"",
+						"Index":	2
+					}, {
+						"Path":	"",
+						"Index":	3
+					}, {
+						"Path":	"",
+						"Index":	4
+					}, {
+						"Path":	"",
+						"Index":	5
+					}, {
+						"Path":	"",
+						"Index":	6
+					}]
+			}
+		}, {
+			"Index":	1,
+			"PipelineStage":	{
+				"Name":	"OffscreenRenderingStage",
+				"Path":	"",
+				"Enabled":	false,
+				"StageSteps":	[{
+						"Path":	"",
+						"Index":	7
+					}]
+			}
+		}, {
+			"Index":	2,
+			"PipelineStage":	{
+				"Name":	"ShadowMapRenderingStage",
+				"Path":	"",
+				"Enabled":	true,
+				"StageSteps":	[{
+						"Path":	"",
+						"Index":	8
+					}]
+			}
+		}, {
+			"Index":	3,
+			"PipelineStage":	{
+				"Name":	"HDRRenderingStage",
+				"Path":	"",
+				"Enabled":	true,
+				"StageSteps":	[{
+						"Path":	"",
+						"Index":	9
+					}, {
+						"Path":	"",
+						"Index":	10
+					}, {
+						"Path":	"",
+						"Index":	11
+					}]
+			}
+		}, {
+			"Index":	4,
+			"PipelineStage":	{
+				"Name":	"ToneMappingStage",
+				"Path":	"",
+				"Enabled":	true,
+				"StageSteps":	[{
+						"Path":	"",
+						"Index":	12
+					}]
+			}
+		}, {
+			"Index":	5,
+			"PipelineStage":	{
+				"Name":	"LDRRenderingStage",
+				"Path":	"",
+				"Enabled":	true,
+				"StageSteps":	[{
+						"Path":	"",
+						"Index":	13
+					}, {
+						"Path":	"",
+						"Index":	14
+					}, {
+						"Path":	"",
+						"Index":	15
+					}]
+			}
+		}, {
+			"Index":	6,
+			"PipelineStage":	{
+				"Name":	"BlitFramebuffer",
+				"Path":	"",
+				"Enabled":	true,
+				"StageSteps":	[{
+						"Path":	"",
+						"Index":	16
+					}]
+			}
+		}, {
+			"Index":	7,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"OffscreenRenderingStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"OffscreenTarget",
+				"PrimitiveGroups":	[129],
+				"PrimitiveSortFunc":	0,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	8,
+			"PipelineStageStepDrawShadowPrimitives":	{
+				"Name":	"ShadowMapStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"ShadowMapTarget",
+				"PrimitiveGroups":	[0],
+				"PrimitiveSortFunc":	0,
+				"ReplaceMaterial":	{
+					"Path":	"defaultRes/materials/ShadowDepth.mat.tjson",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	9,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"HDROpaqueStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"HDRTarget",
+				"PrimitiveGroups":	[0],
+				"PrimitiveSortFunc":	1,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	10,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"HDRSkyboxStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"HDRTarget",
+				"PrimitiveGroups":	[4],
+				"PrimitiveSortFunc":	0,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	11,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"HDRTranslucentStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"HDRTarget",
+				"PrimitiveGroups":	[2],
+				"PrimitiveSortFunc":	2,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	12,
+			"PipelineStageStepDrawQuad":	{
+				"Name":	"ToneMappingStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"LDRTarget",
+				"RenderQuadMaterial":	{
+					"Path":	"defaultRes/materials/PostProcessToneMapping.mat.tjson",
+					"Index":	-1
+				},
+				"ShaderMacros":	{
+					"GlobalShaderMacroMask":	0,
+					"PrivateMacros":	0
+				}
+			}
+		}, {
+			"Index":	13,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"LDROpaqueStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"LDRTarget",
+				"PrimitiveGroups":	[1],
+				"PrimitiveSortFunc":	1,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	14,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"LDRBackgroundStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"LDRTarget",
+				"PrimitiveGroups":	[5],
+				"PrimitiveSortFunc":	0,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	15,
+			"PipelineStageStepDrawPrimitives":	{
+				"Name":	"LDRTranslucentStep",
+				"Path":	"",
+				"StageStepType":	1,
+				"ViewMask":	255,
+				"RenderTargetName":	"LDRTarget",
+				"PrimitiveGroups":	[3],
+				"PrimitiveSortFunc":	2,
+				"ReplaceMaterial":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	16,
+			"PipelineStageStepDrawQuad":	{
+				"Name":	"BlitFramebuffer",
+				"Path":	"",
+				"StageStepType":	2,
+				"ViewMask":	255,
+				"RenderTargetName":	"DefaultTarget",
+				"RenderQuadMaterial":	{
+					"Path":	"defaultRes/materials/PostProcessBlitFramebuffer.mat.tjson",
+					"Index":	-1
+				},
+				"ShaderMacros":	{
+					"GlobalShaderMacroMask":	0,
+					"PrivateMacros":	0
+				}
+			}
+		}]
+}

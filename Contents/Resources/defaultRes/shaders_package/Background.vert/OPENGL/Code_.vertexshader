@@ -1,0 +1,28 @@
+#version 110 
+attribute vec3 a_position;
+attribute vec2 a_texCoord;
+varying vec2 var_TEXCOORD0;
+varying vec3 var_TEXCOORD1;
+varying vec3 var_TEXCOORD2;
+varying vec3 var_TEXCOORD3;
+varying vec3 var_TEXCOORD4;
+varying vec4 var_TEXCOORD8;
+void main()
+{
+	vec3 v0;
+	vec3 v1;
+	vec3 v2;
+	vec3 v3;
+	vec4 v4;
+	vec4 v5;
+	v5.zw = vec2(1.000000e+00,1.000000e+00);
+	v5.xy = a_position.xy;
+	var_TEXCOORD0.xy = a_texCoord;
+	var_TEXCOORD1.xyz = v0;
+	var_TEXCOORD2.xyz = v1;
+	var_TEXCOORD3.xyz = v2;
+	var_TEXCOORD4.xyz = v3;
+	var_TEXCOORD8.xyzw = v4;
+	gl_Position.xyzw = v5;
+}
+

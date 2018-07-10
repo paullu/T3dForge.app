@@ -1,0 +1,37 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package/Background.vert/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	0,
+								"VariantCount":	0,
+								"UsedRegisterCount":	0,
+								"Items":	[]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[]
+							},
+							"ShaderPath":	"defaultRes/shaders_package/Background.vert/OPENGL/Code_.vertexshader"
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	0
+			}
+		}]
+}

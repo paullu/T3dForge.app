@@ -1,0 +1,123 @@
+{
+  "Items": [
+    {
+      "Index": 0,
+      "Material": {
+        "Name": "default_skinning",
+        "Path": "",
+        "MaterialParameters": {
+          "Params": [
+            {
+              "Name": "DiffuseTexture",
+              "Type": 8,
+              "Count": 1,
+              "Value": {
+                        "Path": "baseRes/textures/Diffuse.png",
+                        "Index":  -1
+                      }
+            },
+            {
+              "Name": "DiffuseTexture_sampler",
+              "Type": 10,
+              "Count": 1,
+              "Value": {
+                "Path": "",
+                "Index": 1
+              }
+            }
+          ]
+        },
+        "Techniques": [
+          {
+            "Path": "",
+            "Index": 2
+          }
+        ]
+      }
+    },
+    {
+      "Index": 1,
+      "Sampler": {
+        "Name": "DiffuseTexture_sampler",
+        "Path": "",
+        "AddressU": 0,
+        "AddressV": 0,
+        "SamplerFilter": 2,
+        "SamplerCompareFunc": 0
+      }
+    },
+    {
+      "Index": 2,
+      "Technique": {
+        "Name": "",
+        "Path": "",
+        "Material": {
+          "Path": "",
+          "Index": 0
+        },
+        "TechLevel": {
+          "Quality": 0,
+          "ShaderModel": 0
+        },
+        "Passes": [
+          {
+            "Path": "",
+            "Index": 3
+          }
+        ]
+      }
+    },
+    {
+      "Index": 3,
+      "Pass": {
+        "Name": "",
+        "Path": "",
+        "Technique": {
+          "Path": "",
+          "Index": 2
+        },
+		"RenderPrimitiveGroupId":	3,
+        "VertexShaderPackage": {
+          "Path": "defaultRes/shaders_package/Particle.vert/ShaderPackageRef.tjson",
+		  "Index":	-1
+        },
+        "PixelShaderPackage": {
+          "Path": "defaultRes/shaders_package/Particle.frag/ShaderPackageRef.tjson",
+		  "Index":	-1
+        },
+        "BlendStates": [
+          {
+            "EnableBlending": true,
+            "ColorBlendOp": 0,
+            "ColorSrcBlend": 4,
+            "ColorDestBlend": 5,
+            "AlphaBlendOp": 0,
+            "AlphaSrcBlend": 1,
+            "AlphaDestBlend": 1,
+            "ColorWriteMask": 15
+          }
+        ],
+        "DepthStencilState": {
+          "EnableDepthTest": true,
+          "EnableDepthWrite": false,
+          "DepthTestFunc": 1,
+          "EnableFrontFaceStencil": false,
+          "FrontFaceStencilTest": 5,
+          "FrontFaceStencilFailStencilOp": 0,
+          "FrontFaceDepthFailStencilOp": 0,
+          "FrontFacePassStencilOp": 0,
+          "EnableBackFaceStencil": false,
+          "BackFaceStencilTest": 5,
+          "BackFaceStencilFailStencilOp": 0,
+          "BackFaceDepthFailStencilOp": 0,
+          "BackFacePassStencilOp": 0,
+          "StencilReadMask": 255,
+          "StencilWriteMask": 255,
+          "StencilRef": 255
+        },
+        "FillMode": 2,
+        "CullMode": 1
+      }
+    }
+  ]
+}

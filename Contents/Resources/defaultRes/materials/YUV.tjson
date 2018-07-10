@@ -1,0 +1,123 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"Material":	{
+				"Name":	"ar yuv shader",
+				"Path":	"",
+				"MaterialParameters":	{
+					"Params":	[]
+				},
+				"Techniques":	[{
+						"Path":	"",
+						"Index":	5
+				}]
+			}
+		}, {
+			"Index":	1,
+			"Sampler":	{
+				"Name":	"DiffuseTexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	2,
+			"Sampler":	{
+				"Name":	"NormalTexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	3,
+			"Sampler":	{
+				"Name":	"EnvTexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	4,
+			"Sampler":	{
+				"Name":	"RMATexture_sampler",
+				"Path":	"",
+				"AddressU":	0,
+				"AddressV":	0,
+				"SamplerFilter":	2,
+				"SamplerCompareFunc":	0
+			}
+		}, {
+			"Index":	5,
+			"Technique":	{
+				"Name":	"",
+				"Path":	"",
+				"Material":	{
+					"Path":	"",
+					"Index":	0
+				},
+				"TechLevel":	{
+					"Quality":	0,
+					"ShaderModel":	0
+				},
+				"Passes":	[{
+						"Path":	"",
+						"Index":	6
+					}]
+			}
+		}, {
+			"Index":	6,
+			"Pass":	{
+				"Name":	"",
+				"Path":	"",
+				"Technique":	{
+					"Path":	"",
+					"Index":	5
+				},
+				"RenderPrimitiveGroupId":	1,
+				"VertexShaderPackage":	{
+					"Path":	"defaultRes/shaders_package/YUV.vert/ShaderPackageRef.tjson",
+					"Index":	-1
+				},
+				"PixelShaderPackage":	{
+					"Path":	"defaultRes/shaders_package/YUV.frag/ShaderPackageRef.tjson",
+					"Index":	-1
+				},
+				"BlendStates":	[{
+						"EnableBlending":	false,
+						"ColorBlendOp":	0,
+						"ColorSrcBlend":	4,
+						"ColorDestBlend":	5,
+						"AlphaBlendOp":	0,
+						"AlphaSrcBlend":	1,
+						"AlphaDestBlend":	1,
+						"ColorWriteMask":	15
+					}],
+				"DepthStencilState":	{
+					"EnableDepthTest":	true,
+					"EnableDepthWrite":	true,
+					"DepthTestFunc":	1,
+					"EnableFrontFaceStencil":	false,
+					"FrontFaceStencilTest":	5,
+					"FrontFaceStencilFailStencilOp":	0,
+					"FrontFaceDepthFailStencilOp":	0,
+					"FrontFacePassStencilOp":	0,
+					"EnableBackFaceStencil":	false,
+					"BackFaceStencilTest":	5,
+					"BackFaceStencilFailStencilOp":	0,
+					"BackFaceDepthFailStencilOp":	0,
+					"BackFacePassStencilOp":	0,
+					"StencilReadMask":	255,
+					"StencilWriteMask":	255,
+					"StencilRef":	255
+				},
+				"FillMode":	2,
+				"CullMode":	1
+			}
+		}]
+}

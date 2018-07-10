@@ -1,0 +1,90 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"Material":	{
+				"Name":	"default_skinning",
+				"Path":	"",
+				"MaterialParameters":	{
+					"Params":	[{
+							"Name":	"runtimeID",
+							"Type":	7,
+							"Count":	1,
+							"Value":	"(1.00, 1.0, 0.0, 1.0)"
+						}]
+				},
+				"Techniques":	[{
+						"Path":	"",
+						"Index":	1
+					}]
+			}
+		}, {
+			"Index":	1,
+			"Technique":	{
+				"Name":	"",
+				"Path":	"",
+				"Material":	{
+					"Path":	"",
+					"Index":	0
+				},
+				"TechLevel":	{
+					"Quality":	0,
+					"ShaderModel":	0
+				},
+				"Passes":	[{
+						"Path":	"",
+						"Index":	2
+					}]
+			}
+		}, {
+			"Index":	2,
+      "Pass": {
+        "Name": "",
+        "Path": "",
+        "Technique": {
+          "Path": "",
+          "Index": 1
+        },
+		"RenderPrimitiveGroupId":	129,
+        "VertexShaderPackage": {
+          "Path": "defaultRes/shaders_package/DefaultMesh.vert/ShaderPackageRef.tjson",
+		  "Index":	-1
+        },
+        "PixelShaderPackage": {
+          "Path": "defaultRes/shaders_package/Picker.frag/ShaderPackageRef.tjson",
+		  "Index":	-1
+        },
+        "BlendStates": [
+          {
+            "EnableBlending": false,
+            "ColorBlendOp": 0,
+            "ColorSrcBlend": 4,
+            "ColorDestBlend": 5,
+            "AlphaBlendOp": 0,
+            "AlphaSrcBlend": 1,
+            "AlphaDestBlend": 1,
+            "ColorWriteMask": 15
+          }
+        ],
+        "DepthStencilState": {
+          "EnableDepthTest": true,
+          "EnableDepthWrite": true,
+          "DepthTestFunc": 1,
+          "EnableFrontFaceStencil": false,
+          "FrontFaceStencilTest": 5,
+          "FrontFaceStencilFailStencilOp": 0,
+          "FrontFaceDepthFailStencilOp": 0,
+          "FrontFacePassStencilOp": 0,
+          "EnableBackFaceStencil": false,
+          "BackFaceStencilTest": 5,
+          "BackFaceStencilFailStencilOp": 0,
+          "BackFaceDepthFailStencilOp": 0,
+          "BackFacePassStencilOp": 0,
+          "StencilReadMask": 255,
+          "StencilWriteMask": 255,
+          "StencilRef": 255
+        },
+        "FillMode": 2,
+        "CullMode": 1
+      }
+		}]
+}
