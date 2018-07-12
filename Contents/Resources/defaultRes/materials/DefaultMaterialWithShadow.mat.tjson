@@ -218,9 +218,9 @@
 			"Sampler":	{
 				"Name":	"ShadowMap_sampler",
 				"Path":	"",
-				"AddressU":	0,
-				"AddressV":	0,
-				"SamplerFilter":	2,
+				"AddressU":	1,
+				"AddressV":	1,
+				"SamplerFilter":	1,
 				"SamplerCompareFunc":	0
 			}
 		}]

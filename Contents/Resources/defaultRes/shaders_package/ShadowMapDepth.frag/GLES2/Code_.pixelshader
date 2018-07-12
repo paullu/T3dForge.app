@@ -1,4 +1,5 @@
 #version 100 
+// end extensions
 precision mediump float;
 precision mediump int;
 
@@ -15,18 +16,8 @@ vec4 texture2DTexCoordPrecisionWorkaround(sampler2D p, vec2 tcoord)
 }
 #define texture2D texture2DTexCoordPrecisionWorkaround
 #endif
-varying highp vec4 var_TEXCOORD8;
 void main()
 {
-	highp float f0;
-	f0 = (((var_TEXCOORD8.z/var_TEXCOORD8.w)*5.000000e-01)+5.000000e-01);
-	highp vec4 v1;
-	v1.w = 1.000000e+00;
-	v1.x = f0;
-	v1.y = f0;
-	v1.z = f0;
-	vec4 v2;
-	v2.xyzw = v1;
-	gl_FragColor.xyzw = v2;
+	gl_FragColor.xyzw = vec4(1.000000e+00,1.000000e+00,1.000000e+00,1.000000e+00);
 }
 

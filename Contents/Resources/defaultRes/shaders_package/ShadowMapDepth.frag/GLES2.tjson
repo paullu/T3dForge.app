@@ -25,7 +25,9 @@
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[],
 								"SamplerMapInfos":	[],
-								"PackedArrayInfos":	[]
+								"PackedArrayInfos":	[],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
 							}
 						}
 					}],

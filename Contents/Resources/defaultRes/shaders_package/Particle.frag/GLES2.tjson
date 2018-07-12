@@ -3,7 +3,8 @@
 			"Index":	0,
 			"ShaderPackage":	{
 				"Name":	"",
-				"Path":	"defaultRes/shaders_package/Particle.frag/GLES2.tjson",
+				"Path":	"defaultRes/shaders_package//Particle.frag/GLES2.tjson",
+				"HashID":	4059941053,
 				"ShaderDescriptors":	[{
 						"first":	{
 							"GlobalShaderMacroMask":	0,
@@ -34,7 +35,8 @@
 										"IsColor":	false,
 										"ContainsDefaultValue":	false,
 										"IsSceneTexture":	false,
-										"IsExported":	false
+										"IsSceneBuffer":	false,
+										"IsExported":	true
 									}, {
 										"Name":	"DiffuseTexture_sampler",
 										"Offset":	1,
@@ -51,6 +53,7 @@
 										"IsColor":	false,
 										"ContainsDefaultValue":	false,
 										"IsSceneTexture":	false,
+										"IsSceneBuffer":	false,
 										"IsExported":	false
 									}]
 							},
@@ -58,24 +61,22 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	115,
-										"SizeInBytes":	0,
 										"SourceBufferIndex":	3,
-										"SourceOffset":	0
+										"SourceOffset":	0,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	115,
+										"DestBufferOffset":	0
 									}],
 								"SamplerMapInfos":	[{
 										"SourceBufferIndex":	3,
 										"SourceBufferOffset":	1,
-										"Name":	""
+										"Name":	"DiffuseTexture"
 									}],
-								"PackedArrayInfos":	[{
-										"TypeName":	115,
-										"Size":	0
-									}]
-							},
-							"ShaderPath":	"defaultRes/shaders_package/Particle.frag/GLES2/Code_.pixelshader"
+								"PackedArrayInfos":	[],
+								"ImageInfos":	[],
+								"BufferInfos":	[]
+							}
 						}
 					}],
 				"ShaderPlatformType":	0,

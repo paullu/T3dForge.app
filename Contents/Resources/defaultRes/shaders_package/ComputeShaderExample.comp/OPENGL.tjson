@@ -1,0 +1,116 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"ShaderPackage":	{
+				"Name":	"",
+				"Path":	"defaultRes/shaders_package//ComputeShaderExample.comp/OPENGL.tjson",
+				"ShaderDescriptors":	[{
+						"first":	{
+							"GlobalShaderMacroMask":	0,
+							"PrivateMacros":	0
+						},
+						"second":	{
+							"ShaderMacros":	{
+								"GlobalShaderMacroMask":	0,
+								"PrivateMacros":	0
+							},
+							"MaterialUniformHeader":	{
+								"ConstantSize":	8,
+								"VariantCount":	2,
+								"UsedRegisterCount":	0,
+								"Items":	[{
+										"Name":	"SimulationSpeed",
+										"Offset":	0,
+										"BaseType":	4,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"SimulationSpeed",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"TotalTimeElapsedSeconds",
+										"Offset":	4,
+										"BaseType":	4,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"TotalTimeElapsedSeconds",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"OutputSurface",
+										"Offset":	0,
+										"BaseType":	6,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"OutputSurface",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}, {
+										"Name":	"gVplListHeadBuffer",
+										"Offset":	1,
+										"BaseType":	8,
+										"ComponentCount":	1,
+										"ArraySize":	1,
+										"DefaultValue":	{
+											"Name":	"",
+											"Type":	0,
+											"Count":	1,
+											"Value":	""
+										},
+										"ExportedName":	"gVplListHeadBuffer",
+										"IsColor":	false,
+										"ContainsDefaultValue":	false,
+										"IsSceneTexture":	false,
+										"IsExported":	false
+									}]
+							},
+							"ShaderPackInfo":	{
+								"PackedUniformbuffer":	true,
+								"GroupFlattenedUBs":	false,
+								"CBCopyMembers":	[{
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	103,
+										"DestBufferOffset":	0
+									}],
+								"SamplerMapInfos":	[],
+								"PackedArrayInfos":	[],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[{
+										"Componentype":	10,
+										"ComponentCount":	1
+									}]
+							}
+						}
+					}],
+				"ShaderPlatformType":	2,
+				"ShaderType":	2
+			}
+		}]
+}

@@ -1,28 +1,13 @@
-#version 100 
-precision mediump float;
-precision mediump int;
-
-#ifndef DONTEMITSAMPLERDEFAULTPRECISION
-precision mediump sampler2D;
-precision mediump samplerCube;
-
-#endif
-
-#ifdef TEXCOORDPRECISIONWORKAROUND
-vec4 texture2DTexCoordPrecisionWorkaround(sampler2D p, vec2 tcoord)
-{
-	return texture2D(p, tcoord);
-}
-#define texture2D texture2DTexCoordPrecisionWorkaround
-#endif
-uniform highp sampler2D ps0;
-varying highp vec2 var_TEXCOORD0;
-varying highp vec3 var_TEXCOORD4;
+#version 110 
+// end extensions
+uniform sampler2D DiffuseTexture;
+varying vec2 var_TEXCOORD0;
+varying vec3 var_TEXCOORD4;
 void main()
 {
 	vec4 v0;
 	vec4 v1;
-	v1.xyzw = texture2D(ps0,var_TEXCOORD0);
+	v1.xyzw = texture2D(DiffuseTexture,var_TEXCOORD0);
 	v0.xyzw = v1;
 	vec3 v2;
 	v2.xyz = var_TEXCOORD4;

@@ -1,4 +1,5 @@
 #version 110 
+// end extensions
 uniform vec4 vu_m[1];
 uniform vec4 vu_h[237];
 attribute vec3 a_position;

@@ -98,8 +98,8 @@
           }
         ],
         "DepthStencilState": {
-          "EnableDepthTest": false,
-          "EnableDepthWrite": true,
+          "EnableDepthTest": true,
+          "EnableDepthWrite": false,
           "DepthTestFunc": 1,
           "EnableFrontFaceStencil": false,
           "FrontFaceStencilTest": 5,

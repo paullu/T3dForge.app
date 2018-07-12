@@ -189,7 +189,7 @@
 								"LoadAction":	2,
 								"Attachment":	0,
 								"ClearValue":	{
-									"x":	0,
+									"x":	1,
 									"y":	0,
 									"z":	0,
 									"w":	0

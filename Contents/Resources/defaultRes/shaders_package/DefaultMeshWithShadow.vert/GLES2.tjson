@@ -24,42 +24,44 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	128,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	64,
 										"SourceBufferIndex":	1,
-										"SourceOffset":	128
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	64,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	128,
 										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	128
+									}, {
 										"SourceBufferIndex":	1,
-										"SourceOffset":	768
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	1840,
 										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	64
+									}, {
 										"SourceBufferIndex":	2,
-										"SourceOffset":	64
-									}, {
+										"SourceOffset":	64,
+										"SizeInBytes":	64,
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	109,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
+									}, {
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224,
 										"SizeInBytes":	16,
-										"SourceBufferIndex":	2,
-										"SourceOffset":	224
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	109,
+										"DestBufferOffset":	0
 									}],
 								"SamplerMapInfos":	[],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	192
+										"Size":	192,
+										"TypeName":	104
 									}, {
-										"TypeName":	109,
-										"Size":	16
-									}]
+										"Size":	16,
+										"TypeName":	109
+									}],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
 							}
 						}
 					}, {
@@ -82,49 +84,51 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	3728,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	64,
 										"SourceBufferIndex":	1,
-										"SourceOffset":	128
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	3664,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	128,
 										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	3728
+									}, {
 										"SourceBufferIndex":	1,
-										"SourceOffset":	768
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	1840,
 										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	3664
+									}, {
 										"SourceBufferIndex":	2,
-										"SourceOffset":	64
-									}, {
+										"SourceOffset":	64,
+										"SizeInBytes":	64,
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	109,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
+									}, {
+										"SourceBufferIndex":	2,
+										"SourceOffset":	224,
 										"SizeInBytes":	16,
-										"SourceBufferIndex":	2,
-										"SourceOffset":	224
-									}, {
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	64,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	3600,
+										"DestBufferPrecision":	109,
+										"DestBufferOffset":	0
+									}, {
 										"SourceBufferIndex":	4,
-										"SourceOffset":	0
+										"SourceOffset":	0,
+										"SizeInBytes":	3600,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	64
 									}],
 								"SamplerMapInfos":	[],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	3792
+										"Size":	3792,
+										"TypeName":	104
 									}, {
-										"TypeName":	109,
-										"Size":	16
-									}]
+										"Size":	16,
+										"TypeName":	109
+									}],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
 							}
 						}
 					}],

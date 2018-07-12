@@ -121,7 +121,7 @@
 										"IsSceneTexture":	false,
 										"IsExported":	false
 									}, {
-										"Name":	"ShadowMap",
+										"Name":	"ShadowMapDepth",
 										"Offset":	6,
 										"BaseType":	6,
 										"ComponentCount":	1,
@@ -132,7 +132,7 @@
 											"Count":	1,
 											"Value":	""
 										},
-										"ExportedName":	"ShadowMap",
+										"ExportedName":	"ShadowMapDepth",
 										"IsColor":	false,
 										"ContainsDefaultValue":	false,
 										"IsSceneTexture":	true,
@@ -262,82 +262,75 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	109,
-										"SizeInBytes":	28,
-										"SourceBufferIndex":	0,
-										"SourceOffset":	224
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	12,
 										"SourceBufferIndex":	1,
-										"SourceOffset":	944
-									}, {
+										"SourceOffset":	880,
+										"SizeInBytes":	12,
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	64,
-										"DestBufferPrecision":	109,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
+									}, {
+										"SourceBufferIndex":	3,
+										"SourceOffset":	0,
 										"SizeInBytes":	4,
-										"SourceBufferIndex":	3,
-										"SourceOffset":	0
-									}, {
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	48,
 										"DestBufferPrecision":	109,
-										"SizeInBytes":	4,
-										"SourceBufferIndex":	3,
-										"SourceOffset":	4
+										"DestBufferOffset":	32
 									}, {
+										"SourceBufferIndex":	3,
+										"SourceOffset":	4,
+										"SizeInBytes":	4,
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	80,
 										"DestBufferPrecision":	109,
-										"SizeInBytes":	4,
-										"SourceBufferIndex":	3,
-										"SourceOffset":	8
+										"DestBufferOffset":	16
 									}, {
+										"SourceBufferIndex":	3,
+										"SourceOffset":	8,
+										"SizeInBytes":	4,
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	32,
 										"DestBufferPrecision":	109,
+										"DestBufferOffset":	48
+									}, {
+										"SourceBufferIndex":	3,
+										"SourceOffset":	12,
 										"SizeInBytes":	4,
-										"SourceBufferIndex":	3,
-										"SourceOffset":	12
-									}, {
 										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	115,
-										"SizeInBytes":	0,
-										"SourceBufferIndex":	3,
-										"SourceOffset":	0
+										"DestBufferPrecision":	109,
+										"DestBufferOffset":	0
 									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	2,
-										"DestBufferPrecision":	115,
-										"SizeInBytes":	0,
 										"SourceBufferIndex":	3,
-										"SourceOffset":	2
+										"SourceOffset":	0,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	115,
+										"DestBufferOffset":	0
 									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	3,
-										"DestBufferPrecision":	115,
-										"SizeInBytes":	0,
 										"SourceBufferIndex":	3,
-										"SourceOffset":	4
+										"SourceOffset":	2,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	115,
+										"DestBufferOffset":	2
 									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	4,
-										"DestBufferPrecision":	115,
-										"SizeInBytes":	0,
 										"SourceBufferIndex":	3,
-										"SourceOffset":	6
+										"SourceOffset":	4,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	115,
+										"DestBufferOffset":	3
 									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	1,
-										"DestBufferPrecision":	115,
-										"SizeInBytes":	0,
 										"SourceBufferIndex":	3,
-										"SourceOffset":	8
+										"SourceOffset":	6,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	115,
+										"DestBufferOffset":	4
+									}, {
+										"SourceBufferIndex":	3,
+										"SourceOffset":	8,
+										"SizeInBytes":	0,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	115,
+										"DestBufferOffset":	1
 									}],
 								"SamplerMapInfos":	[{
 										"SourceBufferIndex":	3,
@@ -361,15 +354,14 @@
 										"Name":	""
 									}],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	16
+										"Size":	16,
+										"TypeName":	104
 									}, {
-										"TypeName":	109,
-										"Size":	96
-									}, {
-										"TypeName":	115,
-										"Size":	16
-									}]
+										"Size":	64,
+										"TypeName":	109
+									}],
+								"NumStorageBuffer":	0,
+								"ImageInfos":	[]
 							}
 						}
 					}],

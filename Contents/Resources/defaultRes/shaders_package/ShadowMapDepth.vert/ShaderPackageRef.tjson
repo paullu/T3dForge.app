@@ -5,7 +5,7 @@
 				"Name":	"",
 				"Path":	"defaultRes/shaders_package//ShadowMapDepth.vert/ShaderPackageRef.tjson",
 				"OwnedShaderMacro":	{
-					"GlobalShaderMacroMask":	0,
+					"GlobalShaderMacroMask":	1,
 					"PrivateMacros":	0
 				}
 			}

@@ -1,0 +1,211 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"Prefab":	{
+				"Name":	"",
+				"Path":	"",
+				"HashID":	3356237312,
+				"RootNode":	{
+					"Path":	"",
+					"Index":	1
+				},
+				"BackupRootNode":	{
+					"Path":	"",
+					"Index":	1
+				}
+			}
+		}, {
+			"Index":	1,
+			"Node":	{
+				"Name":	"defaultParticle",
+				"Path":	"",
+				"HashID":	1612808131,
+				"Prefab":	{
+					"Path":	"",
+					"Index":	-1
+				},
+				"scene":	{
+					"Path":	"",
+					"Index":	-1
+				},
+				"Id":	"",
+				"children":	[],
+				"Parent":	{
+					"Path":	"",
+					"Index":	-1
+				},
+				"Components":	[{
+						"Path":	"",
+						"Index":	2
+					}],
+				"LocalTransform":	{
+					"translation":	{
+						"x":	0,
+						"y":	0,
+						"z":	0
+					},
+					"rotation":	{
+						"x":	0,
+						"y":	0,
+						"z":	0,
+						"w":	1
+					},
+					"scale":	{
+						"x":	1,
+						"y":	1,
+						"z":	1
+					}
+				},
+				"OnAddChild":	{
+					"Path":	"",
+					"Index":	-1
+				},
+				"OnRemoveChild":	{
+					"Path":	"",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	2,
+			"ParticleSystemComponent":	{
+				"Name":	"",
+				"Path":	"",
+				"HashID":	804088357,
+				"OwnerNode":	{
+					"Path":	"",
+					"Index":	1
+				},
+				"CastShadow":	true,
+				"LocalToWorld":	{
+					"m0":	1,
+					"m1":	0,
+					"m2":	0,
+					"m3":	0,
+					"m4":	0,
+					"m5":	1,
+					"m6":	0,
+					"m7":	0,
+					"m8":	0,
+					"m9":	0,
+					"m10":	1,
+					"m11":	0,
+					"m12":	0,
+					"m13":	0,
+					"m14":	0,
+					"m15":	1
+				},
+				"Visible":	true,
+				"Emitters":	[{
+						"Path":	"",
+						"Index":	3
+					}],
+				"FrameRatio":	1,
+				"AutoStart":	true
+			}
+		}, {
+			"Index":	3,
+			"ParticleEmitter":	{
+				"Name":	"",
+				"Path":	"",
+				"HashID":	326024744,
+				"Tag":	"",
+				"Enable":	true,
+				"Transform":	{
+					"translation":	{
+						"x":	0,
+						"y":	0,
+						"z":	0
+					},
+					"rotation":	{
+						"x":	0,
+						"y":	0,
+						"z":	0,
+						"w":	1
+					},
+					"scale":	{
+						"x":	1,
+						"y":	1,
+						"z":	1
+					}
+				},
+				"Material":	{
+					"Path":	"",
+					"Index":	4
+				},
+				"Affectors":	[{
+						"Path":	"",
+						"Index":	5
+					}],
+				"RepeatMode":	2,
+				"MaxNumber":	300,
+				"EmissionRate":	200,
+				"Duration":	0,
+				"RepeatDelay":	1,
+				"TimeToLive":	{
+					"x":	1,
+					"y":	2
+				},
+				"Size":	{
+					"x":	0.10000000149011612,
+					"y":	0.10000000149011612
+				},
+				"Rotation":	{
+					"x":	0,
+					"y":	0
+				},
+				"WidthHeightRatio":	1,
+				"StartColor1":	{
+					"x":	1,
+					"y":	1,
+					"z":	1,
+					"w":	1
+				},
+				"StartColor2":	{
+					"x":	1,
+					"y":	1,
+					"z":	1,
+					"w":	1
+				},
+				"Direction":	{
+					"x":	0,
+					"y":	1,
+					"z":	0
+				},
+				"BillboardType":	0
+			}
+		}, {
+			"Index":	4,
+			"MaterialInstance":	{
+				"Name":	"",
+				"Path":	"",
+				"HashID":	2342200067,
+				"MaterialParameters":	{
+					"Params":	[{
+							"Name":	"DiffuseTexture",
+							"Type":	8,
+							"Count":	1,
+							"Value":	{
+								"Path":	"defaultRes/textures/particle.png.tjson",
+								"Index":	-1
+							}
+						}]
+				},
+				"Material":	{
+					"Path":	"defaultRes/materials/ParticleBlendAdd.mat.tjson",
+					"Index":	-1
+				}
+			}
+		}, {
+			"Index":	5,
+			"ConeEmitter":	{
+				"Name":	"",
+				"Path":	"",
+				"HashID":	2621269507,
+				"Enable":	true,
+				"Tag":	"",
+				"Angle":	1,
+				"Radius":	1,
+				"Speed":	1
+			}
+		}]
+}

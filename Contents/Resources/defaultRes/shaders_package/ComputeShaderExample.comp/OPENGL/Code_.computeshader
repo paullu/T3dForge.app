@@ -1,0 +1,108 @@
+#version 430 
+// end extensions
+layout( local_size_x = 32, local_size_y = 32, local_size_z = 1 ) in;
+layout(std140) uniform Material
+{
+#define SimulationSpeed SimulationSpeedMaterial
+	float SimulationSpeed;
+#define TotalTimeElapsedSeconds TotalTimeElapsedSecondsMaterial
+	float TotalTimeElapsedSeconds;
+};
+
+uniform layout(r32ui,binding=0) uimage2D cg0;
+void main()
+{
+	float f0;
+	float f1;
+	float f2;
+	float f3;
+	vec2 v4;
+	ivec2 v5;
+	v5.xy = imageSize( cg0);
+	vec2 v6;
+	float f7;
+	f7 = float(v5.x);
+	v6.x = f7;
+	float f8;
+	f8 = float(v5.y);
+	v6.y = f8;
+	vec2 v9;
+	vec2 v10;
+	v10.xy = vec2(gl_GlobalInvocationID.xy);
+	v9.xy = ((v10/v6)+vec2(-5.000000e-01,-5.000000e-01));
+	v4.xy = v9;
+	float f11;
+	f11 = (SimulationSpeed*TotalTimeElapsedSeconds);
+	float f12;
+	f12 = sin((f11*1.000000e-01));
+	float f13;
+	f13 = length(v9);
+	float f14;
+	f14 = ((f11*1.000000e-01)+(((2.500000e-01+(5.000000e-02*f12))/(f13+7.000000e-02))*2.200000e+00));
+	float f15;
+	f15 = sin(f14);
+	float f16;
+	f16 = cos(f14);
+	vec2 v17;
+	vec2 v18;
+	v17.x = f16;
+	v17.y = f15;
+	v18.x = (-f15);
+	v18.y = f16;
+	f1 = 0.000000e+00;
+	f2 = 0.000000e+00;
+	f3 = 0.000000e+00;
+	f0 = 0.000000e+00;
+	int i19;
+	i19 = 0;
+	for (;i19<90;)
+	{
+		vec3 v20;
+		vec3 v21;
+		v21.z = 0.000000e+00;
+		v21.xy = v9;
+		vec3 v22;
+		v22.xyz = (vec3(f0)*v21);
+		v20.xyz = v22;
+		v20.xy = ((v18*v22.yy)+(v17*v22.xx));
+		vec3 v23;
+		v23.xy = vec2(2.200000e-01,3.000000e-01);
+		v23.z = ((f0+-1.500000e+00)+(-(sin((f11*1.300000e-01))*1.000000e-01)));
+		v20.xyz = (v20+v23);
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		v20.xyz = ((abs(v20)/vec3(dot(v20,v20)))+vec3(-6.590000e-01,-6.590000e-01,-6.590000e-01));
+		float f24;
+		f24 = dot(v20,v20);
+		float f25;
+		f25 = length((v9*vec2(1.300000e+01)));
+		f3 = (f3+((f24*1.500000e-03)*(1.800000e+00+sin(((f25+5.000000e-01)+(-(f11*2.000000e-01)))))));
+		float f26;
+		f26 = dot(v20,v20);
+		float f27;
+		f27 = length((v9*vec2(1.450000e+01)));
+		f2 = (f2+((f26*1.300000e-03)*(1.500000e+00+sin(((f27+1.200000e+00)+(-(f11*3.000000e-01)))))));
+		float f28;
+		f28 = length((v20.xy*vec2(1.000000e+01)));
+		f1 = (f1+(f28*3.000000e-04));
+		f0 = (f0+3.500000e-02);
+		i19 = (i19+1);
+	}
+	float f29;
+	f29 = length(v4);
+	float f30;
+	f30 = (f1*mix(9.000000e-01,0.000000e+00,f29));
+	vec3 v31;
+	v31.x = (f30*(1.500000e+00+(sin((f11*2.000000e-01))*4.000000e-01)));
+	v31.y = (((f3*mix(7.000000e-01,0.000000e+00,f29))+f30)*3.000000e-01);
+	v31.z = (f2*mix(5.000000e-01,0.000000e+00,f29));
+	vec3 v32;
+	v32.xyz = min(pow(abs(((v31+vec3((mix(2.000000e-01,0.000000e+00,f29)*8.500000e-01)))+vec3((mix(0.000000e+00,6.000000e-01,f30)*3.000000e-01)))),vec3(1.200000e+00,1.200000e+00,1.200000e+00)),vec3(1.000000e+00,1.000000e+00,1.000000e+00));
+	imageStore( cg0, ivec2(gl_GlobalInvocationID.xy), uvec4((((uint((v32.x*2.550000e+02))|(uint((v32.y*2.550000e+02))<<8u))|(uint((v32.z*2.550000e+02))<<16u))|4278190080u)));
+}
+

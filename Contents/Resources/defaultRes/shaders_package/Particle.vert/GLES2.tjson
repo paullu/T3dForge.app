@@ -3,7 +3,8 @@
 			"Index":	0,
 			"ShaderPackage":	{
 				"Name":	"",
-				"Path":	"defaultRes/shaders_package/Particle.vert/GLES2.tjson",
+				"Path":	"defaultRes/shaders_package//Particle.vert/GLES2.tjson",
+				"HashID":	4059941053,
 				"ShaderDescriptors":	[{
 						"first":	{
 							"GlobalShaderMacroMask":	0,
@@ -24,27 +25,28 @@
 								"PackedUniformbuffer":	true,
 								"GroupFlattenedUBs":	false,
 								"CBCopyMembers":	[{
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	64,
-										"DestBufferPrecision":	104,
-										"SizeInBytes":	64,
 										"SourceBufferIndex":	1,
-										"SourceOffset":	128
-									}, {
-										"DestBufferIndex":	0,
-										"DestBufferOffset":	0,
-										"DestBufferPrecision":	104,
+										"SourceOffset":	128,
 										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	64
+									}, {
 										"SourceBufferIndex":	2,
-										"SourceOffset":	64
+										"SourceOffset":	64,
+										"SizeInBytes":	64,
+										"DestBufferIndex":	0,
+										"DestBufferPrecision":	104,
+										"DestBufferOffset":	0
 									}],
 								"SamplerMapInfos":	[],
 								"PackedArrayInfos":	[{
-										"TypeName":	104,
-										"Size":	128
-									}]
-							},
-							"ShaderPath":	"defaultRes/shaders_package/Particle.vert/GLES2/Code_.vertexshader"
+										"Size":	128,
+										"TypeName":	104
+									}],
+								"ImageInfos":	[],
+								"BufferInfos":	[]
+							}
 						}
 					}],
 				"ShaderPlatformType":	0,

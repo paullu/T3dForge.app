@@ -1,0 +1,50 @@
+{
+	"Items":	[{
+			"Index":	0,
+			"Material":	{
+				"Name":	"computemat",
+				"Path":	"",
+				
+				"Techniques":	[{
+						"Path":	"",
+						"Index":	1
+					}]
+			}
+		}, {
+			"Index":	1,
+			"Technique":	{
+				"Name":	"",
+				"Path":	"",
+				"Material":	{
+					"Path":	"",
+					"Index":	0
+				},
+				"TechLevel":	{
+					"Quality":	0,
+					"ShaderModel":	0
+				},
+				"Passes":	[{
+						"Path":	"",
+						"Index":	2
+					}]
+			}
+		}, 
+		{
+			"Index":	2,
+			"ComputePass": {
+			"Name": "",
+			"Path": "",
+			"Technique": {
+			  "Path": "",
+			  "Index": 1
+			},
+		
+			"ComputeShaderPackage": {
+			  "Path": "defaultRes/shaders_package/ComputeShaderExample.comp/ShaderPackageRef.tjson",
+			  "Index":	-1
+			}
+
+
+      }
+		}]
+}

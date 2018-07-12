@@ -5,12 +5,7 @@
 				"Name":	"default_skinning",
 				"Path":	"",
 				"MaterialParameters":	{
-					"Params":	[{
-							"Name":	"runtimeID",
-							"Type":	7,
-							"Count":	1,
-							"Value":	"(1.00, 1.0, 0.0, 1.0)"
-						}]
+					"Params":	[]
 				},
 				"Techniques":	[{
 						"Path":	"",

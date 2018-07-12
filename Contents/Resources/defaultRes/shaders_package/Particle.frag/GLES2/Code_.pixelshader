@@ -1,4 +1,5 @@
 #version 100 
+// end extensions
 precision mediump float;
 precision mediump int;
 
@@ -15,14 +16,14 @@ vec4 texture2DTexCoordPrecisionWorkaround(sampler2D p, vec2 tcoord)
 }
 #define texture2D texture2DTexCoordPrecisionWorkaround
 #endif
-uniform highp sampler2D ps0;
+uniform highp sampler2D DiffuseTexture;
 varying highp vec2 var_TEXCOORD0;
 varying highp vec3 var_TEXCOORD4;
 void main()
 {
 	vec4 v0;
 	vec4 v1;
-	v1.xyzw = texture2D(ps0,var_TEXCOORD0);
+	v1.xyzw = texture2D(DiffuseTexture,var_TEXCOORD0);
 	v0.xyzw = v1;
 	vec3 v2;
 	v2.xyz = var_TEXCOORD4;

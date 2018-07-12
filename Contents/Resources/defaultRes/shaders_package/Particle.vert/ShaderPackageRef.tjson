@@ -3,7 +3,8 @@
 			"Index":	0,
 			"ShaderPackageRef":	{
 				"Name":	"",
-				"Path":	"",
+				"Path":	"defaultRes/shaders_package//Particle.vert/ShaderPackageRef.tjson",
+				"HashID":	45189465,
 				"OwnedShaderMacro":	{
 					"GlobalShaderMacroMask":	0,
 					"PrivateMacros":	0
